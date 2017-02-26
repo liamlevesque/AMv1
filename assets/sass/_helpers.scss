@@ -1,0 +1,206 @@
+/*******************
+	HELPER CLASSES
+********************/
+	.h-overflow{
+		overflow: hidden;
+	}
+	
+	.h-t-xs{
+		font-size: 0.6rem;
+	}
+
+	.h-t-s{
+		font-size: 0.8rem;
+	}
+
+	.h-t-m{
+		font-size: 1rem;
+	}
+
+	.h-t-l, .h-t-large{
+		font-size: 1.5rem;
+	}
+
+	.h-t-xxxl{
+		font-size: 3.5rem;
+	}
+
+	.h-ta-center{
+		text-align: center;
+	}
+
+	.h-ta-left{
+		text-align: left;
+	}
+
+	.h-ta-right{
+		text-align: right;
+	}
+
+	.h-tt-uppercase{
+		text-transform: uppercase;
+	}
+
+	.h-t-ellipsize{
+		@include ellipsize;
+	}
+
+	.h-valign{
+		@include vert-align;
+		position: absolute;
+	}
+	
+	.h-mt-80{
+		margin-top: 10px;
+	}
+
+	.h-mt-100{
+		margin-top: $default-margin;
+	}
+
+	.h-mb-100{
+		margin-bottom: $default-margin;
+	}
+
+	.h-mb-50{
+		margin-bottom: $default-margin/2;	
+	}
+
+	.h-mb-0{
+		margin-bottom: 0;
+	}
+
+	.h-mr-100{
+		margin-right: $default-margin;
+	}
+
+	.h-mr-50{
+		margin-right: $default-margin/2;
+	}
+
+	.h-ml-100{
+		margin-left: $default-margin;
+	}
+
+	.h-ml-50{
+		margin-left: $default-margin/2;
+	} 
+
+	.h-pt-100{
+		padding-top: $default-margin;
+	}
+
+	.h-pb-100{
+		padding-bottom: $default-margin;
+	}
+
+	.h-p-0{
+		padding: 0;
+	}
+
+	.h-lh-200{
+		line-height: 2;
+	}
+
+	.h-d-table{
+		@include tableLayout;
+	}
+
+	.h-d-block{
+		display: block;
+	}
+
+	.h-d-inline-block{
+		display: inline-block;
+	}
+	
+	.h-pos-relative{
+		position: relative;
+	}
+
+	.h-pos-center{
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		text-align: center;
+	}
+
+	.h-va-center{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+	}
+
+	.h-mw-400{
+		max-width: 430px;
+    	margin: 0 auto;
+	}
+
+	.h-f-right{
+		position: absolute;
+		top: $default-margin;
+		right: $default-margin;
+		text-align: right;
+	}
+
+	.h-float-left{
+		float: left;
+	}
+
+	.h-float-right{
+		float: right;
+	}
+
+	.h-va-super{
+		vertical-align: super;
+	}
+
+	.h-ws-nowrap{
+		white-space: nowrap;
+	}
+
+	.h-icon--large{
+	    font-size: 25px;
+	}
+
+
+
+
+	.h-viewer-hidden{
+		.s-viewer-mode &{
+			display: none;
+		}
+	}
+
+	.h-viewer-shown{
+		display: none;
+
+		.s-viewer-mode &{
+			display: initial;
+		}
+	}
+
+
+/*******************
+	COLOUR OVERRIDES
+********************/
+
+.c-price{color: $money-color;}
+.c-finance{color: $finance-color;}
+.c-brand{color: $brand-color;}
+.c-active{ color: $finance-color; } 
+.c-error{ color: $error-colour; }
+
+.c-link{color: $link-colour;}
+
+.c-grey{color: $grey-500;}
+.c-grey-700{color: $grey-700};
+.c-white{color: $white !important;}
+.c-black{color: $black;}
+
+.bg-finance{background-color: $finance-tint;}
+.bg-brand{background-color: $brand-color;} 
+.bg-grey{background-color: $grey-100;}

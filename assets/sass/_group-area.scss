@@ -1,0 +1,57 @@
+.group-area{
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+
+}
+
+	.g-half{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		margin: 0 10px;
+		border-left: 2px solid white;
+	}
+
+header{
+
+}
+
+.group--lots{
+	flex: auto;
+	display: flex;
+	flex-direction: column;
+	// justify-content: space-between;
+}
+	
+	.lot{
+
+		padding: 5px;
+		
+		&.s-sold{
+			color: palette(red);
+		}
+
+		&.s-max-bid{
+			background-color: white;
+			color: black;
+		}
+	}
+
+.group--column{
+	display: flex;
+	flex-direction: row;
+}
+
+	.column--lot{
+		flex: 1;
+		padding-left: 10px;
+	}
+
+	.column--bidder{
+		flex: 3;
+	}
+
+	.column--price{
+		flex: 3;
+	}

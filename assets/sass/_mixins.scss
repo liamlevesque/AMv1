@@ -1,0 +1,233 @@
+//COLOURS
+
+$brand-color: #E87722;
+$finance-color: #24532B;
+$finance-tint: #D3E8CB;
+$finance-dabled: #F3FFF8;
+$money-color: #20579E;
+$money-tint: #D2DDEC;
+
+$error-colour: #c4483a;
+$error-colour-light: #F3BFBF;
+$warning-colour: #FCD748;
+$active-colour: #20579E;
+$link-colour: #1478BC;
+
+$selected-background: rgba($brand-color,0.3);
+
+$black: #000000;
+$white: #ffffff;
+
+$grey-50: #e8e6e2;
+$grey-100: #E9E9E9;
+$grey-300: #bfc0be;
+$grey-500: #959595;
+$grey-700: #585858;
+$grey-900: #333333;
+
+$border-color: #bdbdbd;
+$border-active: #E35530;
+$border-separator: rgba(#959595,0.5);
+
+$ritchie-border: 1px dotted $border-color;
+
+//GRADIENTS
+$button-gradient: linear-gradient(#FAB558, #F69731);
+$button-gradient_hover: linear-gradient(#F58D31, #EB6D30);
+$button-gradient_disabled: linear-gradient(#dddad8, #cfcdcb);
+
+//BOX SHADOW
+$ritchie-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);
+$ritchie-shadow_inner: inset 1px 1px 5px 0 rgba(0, 0, 0, 0.15);
+
+//TEXT SIZES
+$default-text-size: 0.9rem;
+
+@mixin default-font{
+  font-size: $default-text-size;
+  line-height: 1.4rem;
+}
+
+/**********************
+  TEXT FORMATTING
+**********************/
+@mixin smalltext{
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 0.9rem;
+}
+
+  .smalltext{
+    @include smalltext;
+    text-transform: uppercase;
+  }
+
+@mixin boldtext{
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+
+@mixin ellipsize{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin vert-align{
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+
+@mixin loading($color){
+  &:after{
+      display: block;
+      position: absolute;
+      content: " ";
+      left: 0;
+      right: 100%;
+      height: 4px;
+      bottom: 0;
+      background-color: $color;
+
+      animation-name: waitingslide;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+    }
+  }
+
+  @keyframes waitingslide{
+        0%{
+          left: 0;
+          right: 100%;
+        }
+
+        50%{
+          left: 0;
+          right: 0;
+        }
+
+        100%{
+          left: 100%;
+          right: 0;
+        }
+      }
+
+//MEASUREMENTS
+
+$default-border-radius: 5px;
+$default-margin: 15px;
+$input-height: 30px;
+$toggle-height: 20px;
+$toggle-padding: 40px; //THIS IS HOW MUCH THE MONEY
+$tooltip-icon-size: 24px;
+$lot-header-height: 53px;
+
+//HEADER AREA
+$header-height: 91px;
+
+//MEASUREMENTS FOR THE UPPER SECTION AND LOT INFO AREA
+$top-section-height-small: 360px;
+$top-section-height-med: 395px;
+$top-section-height-large: 450px;
+
+@mixin center-content(){
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@mixin tableLayout(){
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+//TRANSITIONS
+$transition-time_1: .2s;
+$transition-time_2: .35s;
+$transition-function: cubic-bezier(0.630, 0.005, 0.365, 1.000);//cubic-bezier(0.95, 0.05, 0.795, 0.035);
+
+$transition: $transition-time_1 $transition-function;
+
+@mixin transition($properties...){
+  transition-property: $properties;
+  transition-duration: $transition-time_2;
+  transition-timing-function: $transition-function;
+}
+
+@mixin transition-delayed($delay, $properties...){
+  transition-property: $properties;
+  transition-duration: $transition-time_2;
+  transition-timing-function: $transition-function;
+  transition-delay: $delay;
+}
+
+@mixin tableLayout(){
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+@mixin line-clamp(){
+  //IF THIS BROWSER SUPPORTS LINE CLAMPING, THEN USE IT. IF NOT, JUST LET IT OVERFLOW.
+  @supports (-webkit-line-clamp: 1)
+  {
+    display            : -webkit-box;
+    -webkit-box-orient : vertical;
+    overflow           : hidden;
+    text-overflow      : ellipsis;
+    -webkit-line-clamp : 2;
+  }
+}
+
+//BREAKPOINTS
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 80em) { @content; }
+  }
+  @if $point == largemax {
+    @media (max-width: 80em) { @content; }
+  }
+  @if $point == med-large {
+    @media (min-width: 64em) { @content; }
+  }
+  @if $point == med-med-large {
+    @media (min-width: 64em) { @content; }
+  }
+  @else if $point == med-to-medlarge {
+    @media (min-width: 48em) and (max-width: 64em) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 48em) { @content; }
+  }
+  @else if $point == medmax {
+    @media (max-width: 800px) { @content; }
+  }
+  @else if $point == med-lg-max {
+    @media (max-width: 64em) { @content; }
+  }
+
+  @else if $point == small {
+    @media (min-width: 30.0625em)  { @content; }
+  }
+  @else if $point == smallmax {
+    @media (max-width: 30.0625em)  { @content; }
+  }
+}
+
+
+//VERTICAL BREAKPOINTS
+
+@mixin vbreakpoint($point){
+  @if $point == med{
+    @media (min-height: 800px) { @content; }
+  }
+  @if $point == large{
+    @media (min-height: 1000px) { @content; }
+  }
+}

@@ -1,0 +1,454 @@
+{
+	"proposal": {
+		"lot": "1",
+		"bidder": 38882,
+		"bid": 12500000,
+		"location": "Saudi",
+		"type": "openingoffer"
+	},
+
+	"current": {
+		"ask": 12500,
+		"bid": 10000,
+		"location": "On Site",
+		"lot":1,
+	},
+
+	"previous": {
+		"lot": 0,
+		"bidder": 38882,
+		"soldPrice": 25000
+	},
+
+	"group": {
+		"maxbid": 25000,
+		"currentGroup": 0,
+		"lots": {}
+	},
+
+	"clerk": "Liam",
+
+	"alllots": {
+		"0": {
+			"lot": "1A",
+			"name": "2008 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1XKDDB0X08J236544",
+			"meter": "113903 Mi",
+			"photo": "8686158_1.jpg",
+			"photos": [
+				"8686158_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": true,
+			"bid": 0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 25000,
+			"bidder": 19982,
+			"group":1,
+			"maxBid": null
+		},
+		"1":{
+			"lot": 2,
+			"name": "2002 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1XKDDT9XX2J885672",
+			"meter": "136414 Mi",
+			"photo": "8754460_1.jpg",
+			"photos": [
+				"8754460_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 18000,
+			"bidder": 38721,
+			"group":1,
+			"soldToYou" : true,
+			"maxBid": null
+		},
+		"2":{
+			"lot": 3,
+			"name": "2006 KENWORTH T800B T/A Winch Tractor",
+			"serial": "1XKDDT9X76R130339",
+			"meter": "55980 Mi",
+			"photo": "8754458_1.jpg",
+			"photos": [
+				"8754458_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": 11001,
+			"group":1,
+			"maxBid": null
+		},
+		"3":{
+			"lot": 4,
+			"name": "2012 KENWORTH T800 T/A Sleeper Winch Tractor",
+			"serial": "1XKDD79X9CJ315221",
+			"meter": "115669 Mi",
+			"photo": "8709802_1.jpg",
+			"photos": [
+				"8709802_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": true,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":2,
+			"maxBid": null
+		},
+		"4":{
+			"lot": 5,
+			"name": "2007 KENWORTH T800B T/A Winch Tractor",
+			"serial": "1XKDDT9X87R163075",
+			"meter": "278951 Mi",
+			"photo": "8666603_1.jpg",
+			"photos": [
+				"8709802_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":2,
+			"maxBid": null
+		},
+		"5":{
+			"lot": 6,
+			"name": "2007 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1XKDDT9X87J156898",
+			"meter": "198054 Mi",
+			"photo": "8699594_1.jpg",
+			"photos": [
+				"8709802_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": true,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"status": "Out Of Auction",
+			"group":3,
+			"maxBid": null
+		},
+		"6":{
+			"lot": 7,
+			"name": "2006 KENWORTH T800B T/A Winch Tractor",
+			"serial": "1XKDDT9X96R132349",
+			"meter": "225794 Mi",
+			"photo": "8754600_1.jpg",
+			"photos": [
+				"8709802_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":3,
+			"maxBid": null
+		},
+		"7":{
+			"lot": 8,
+			"name": "2008 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1XKDDB0X08J236544",
+			"meter": "113903 Mi",
+			"photo": "8686158_1.jpg",
+			"photos": [
+				"8709802_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": true,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":3,
+			"maxBid": 12000
+		},
+		"8":{
+			"lot": 9,
+			"name": "2002 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1XKDDT9XX2J885672",
+			"meter": "136414 Mi",
+			"photo": "8754460_1.jpg",
+			"photos": [
+				"8709802_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": true,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":3,
+			"maxBid": null
+		},
+		"9":{
+			"lot": 10,
+			"name": "2006 KENWORTH T800B T/A Winch Tractor",
+			"serial": "1XKDDT9X76R130339",
+			"meter": "55980 Mi",
+			"photo": "8754458_1.jpg",
+			"photos": [
+				"8754458_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":4,
+			"status":"Moved to Ring 2",
+			"maxBid": null
+		},
+		"10":{
+			"lot": 11,
+			"name": "1998 KENWORTH T800B Winch Tractor",
+			"serial": "1NKDL99X5WR759713",
+			"meter": "210501 Mi",
+			"photo": "8740589_1.jpg",
+			"photos": [
+				"8740589_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":4,
+			"maxBid": null
+		},
+		"11":{
+			"lot": 12,
+			"name": "2005 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1XKDDT9X85J082041",
+			"meter": "132456 Mi",
+			"photo": "8746208_1.jpg",
+			"photos": [
+				"8746208_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":4,
+			"maxBid": null
+		},
+		"12":{
+			"lot": 13,
+			"name": "2002 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1XKDDT9X52J887636",
+			"meter": "433942 Mi",
+			"photo": "8699592_1.jpg",
+			"photos": [
+				"8699592_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":4,
+			"maxBid": null
+		},
+		"13":{
+			"lot": 14,
+			"name": "2000 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1NKDLT9X0YR863638",
+			"meter": "243806 Mi",
+			"photo": "8746209_1.jpg",
+			"photos": [
+				"8746209_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":4,
+			"maxBid": null
+		},
+		"14":{
+			"lot": 15,
+			"name": "1998 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1NKDL99X9WR759729",
+			"meter": "23302 Mi",
+			"photo": "8738289_1.jpg",
+			"photos": [
+				"8738289_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":4,
+			"maxBid": null
+		},
+		"15":{
+			"lot": 16,
+			"name": "2006 KENWORTH T800B T/A Winch Tractor",
+			"serial": "1XKDDT9X96R132352",
+			"meter": "14836 Mi",
+			"photo": "8729154_1.jpg",
+			"photos": [
+				"8729154_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":4,
+			"maxBid": null
+		},
+		"16":{
+			"lot": 17,
+			"name": "1995 KENWORTH T800B T/A Winch Tractor",
+			"serial": "1NKDL99X9SJ682174",
+			"meter": "202909 Mi",
+			"photo": "8720400_1.jpg",
+			"photos": [
+				"8720400_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":4,
+			"maxBid": null
+		},
+		"17":{
+			"lot": 18,
+			"name": "2002 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1XKDDT9X12J884037",
+			"meter": "158138 Mi",
+			"photo": "8733298_1.jpg",
+			"photos": [
+				"8709802_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":5,
+			"maxBid": null
+		},
+		"18":{
+			"lot": 19,
+			"name": "2002 KENWORTH T800 T/A Winch Tractor",
+			"serial": "1XKDDT9X12J884037",
+			"meter": "158138 Mi",
+			"photo": "8733298_1.jpg",
+			"photos": [
+				"8709802_1.jpg",
+				"8709802_2.jpg",
+				"8709802_3.jpg"
+			],
+			"warranty": false,
+			"bid":0,
+			"watching": false,
+			"comeswith": "Cummins ISX, 500 hp, eng brake, Eaton Fuller RTLO18918B, dbl diff lock, 8 bag A/R susp, 13200 lb frt, D46-170HP rears, 238 in. WB, 48 in. sleeper, wet kit, PAS",
+			"catnotes": "FROM THE PROFESSIONALLY MAINTAINED FLEET OF PENSKE NATIONAL TRUCK PROTECTION (\"NTP\") WARRANTY ELIGIBLE CARB COMPLIANT CERTIFIED CLEAN IDLE",
+			"openPrice": 10000,
+			"soldPrice": 0,
+			"bidder": null,
+			"group":6,
+			"maxBid": null
+		}
+	}
+}

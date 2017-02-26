@@ -1,0 +1,28 @@
+$palettes: (
+    green: (
+        base:   #36AE4F,
+    ),
+    blue:(
+		base:   #0064FF,
+    ),
+    orange:(
+        base:   #E87722,
+    ),
+    red:(
+        base:   #FF4242,
+    ),
+    yellow:(
+        base:   #FFE201,
+    ),
+    grey: (
+        base:  #95A5A6,
+        x-light: #ECF0F1,
+        light: #bdc3c7,
+        dark: #7F8C8D,
+        x-dark: #34495E,
+    )
+);
+
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}

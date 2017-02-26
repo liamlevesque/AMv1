@@ -1,0 +1,811 @@
+@charset "UTF-8";
+/**********************
+  TEXT FORMATTING
+**********************/
+.smalltext {
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 0.9rem;
+  text-transform: uppercase; }
+
+@-webkit-keyframes waitingslide {
+  0% {
+    left: 0;
+    right: 100%; }
+  50% {
+    left: 0;
+    right: 0; }
+  100% {
+    left: 100%;
+    right: 0; } }
+
+@keyframes waitingslide {
+  0% {
+    left: 0;
+    right: 100%; }
+  50% {
+    left: 0;
+    right: 0; }
+  100% {
+    left: 100%;
+    right: 0; } }
+
+body {
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  color: inherit;
+  text-decoration: underline; }
+
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 3px; }
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 15px; }
+
+h3 {
+  font-size: 2.5vw;
+  margin-bottom: 7.5px; }
+
+h4 {
+  margin-bottom: 7.5px; }
+
+h5 {
+  color: inherit;
+  margin-bottom: 5px; }
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  margin-top: 0; }
+
+.p-100 {
+  font-size: 1rem;
+  line-height: 1.6rem; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none; }
+  a:hover {
+    text-decoration: underline;
+    outline: none; }
+  a:active, a:focus {
+    outline: none; }
+  a.a--img {
+    line-height: 0;
+    display: inline-block;
+    max-width: 100%; }
+    a.a--img img {
+      max-width: 100%; }
+
+hr {
+  height: 0;
+  border: none;
+  border-bottom: 1px dotted #bdbdbd; }
+
+.link {
+  text-decoration: underline; }
+
+.logo {
+  display: inline-block;
+  width: 200px;
+  height: 46px;
+  margin: 10px 5px 10px 10px;
+  -webkit-transform: scale(1.15) translateX(15px);
+          transform: scale(1.15) translateX(15px); }
+
+/*******************
+	HELPER CLASSES
+********************/
+.h-overflow {
+  overflow: hidden; }
+
+.h-t-xs {
+  font-size: 0.6rem; }
+
+.h-t-s {
+  font-size: 0.8rem; }
+
+.h-t-m {
+  font-size: 1rem; }
+
+.h-t-l, .h-t-large {
+  font-size: 1.5rem; }
+
+.h-t-xxxl {
+  font-size: 3.5rem; }
+
+.h-ta-center {
+  text-align: center; }
+
+.h-ta-left {
+  text-align: left; }
+
+.h-ta-right {
+  text-align: right; }
+
+.h-tt-uppercase {
+  text-transform: uppercase; }
+
+.h-t-ellipsize {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.h-valign {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute; }
+
+.h-mt-80 {
+  margin-top: 10px; }
+
+.h-mt-100 {
+  margin-top: 15px; }
+
+.h-mb-100 {
+  margin-bottom: 15px; }
+
+.h-mb-50 {
+  margin-bottom: 7.5px; }
+
+.h-mb-0 {
+  margin-bottom: 0; }
+
+.h-mr-100 {
+  margin-right: 15px; }
+
+.h-mr-50 {
+  margin-right: 7.5px; }
+
+.h-ml-100 {
+  margin-left: 15px; }
+
+.h-ml-50 {
+  margin-left: 7.5px; }
+
+.h-pt-100 {
+  padding-top: 15px; }
+
+.h-pb-100 {
+  padding-bottom: 15px; }
+
+.h-p-0 {
+  padding: 0; }
+
+.h-lh-200 {
+  line-height: 2; }
+
+.h-d-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+
+.h-d-block {
+  display: block; }
+
+.h-d-inline-block {
+  display: inline-block; }
+
+.h-pos-relative {
+  position: relative; }
+
+.h-pos-center {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center; }
+
+.h-va-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%; }
+
+.h-mw-400 {
+  max-width: 430px;
+  margin: 0 auto; }
+
+.h-f-right {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: right; }
+
+.h-float-left {
+  float: left; }
+
+.h-float-right {
+  float: right; }
+
+.h-va-super {
+  vertical-align: super; }
+
+.h-ws-nowrap {
+  white-space: nowrap; }
+
+.h-icon--large {
+  font-size: 25px; }
+
+.s-viewer-mode .h-viewer-hidden {
+  display: none; }
+
+.h-viewer-shown {
+  display: none; }
+  .s-viewer-mode .h-viewer-shown {
+    display: initial; }
+
+/*******************
+	COLOUR OVERRIDES
+********************/
+.c-price {
+  color: #20579E; }
+
+.c-finance {
+  color: #24532B; }
+
+.c-brand {
+  color: #E87722; }
+
+.c-active {
+  color: #24532B; }
+
+.c-error {
+  color: #c4483a; }
+
+.c-link {
+  color: #1478BC; }
+
+.c-grey {
+  color: #959595; }
+
+.c-grey-700 {
+  color: #585858; }
+
+.c-white {
+  color: #ffffff !important; }
+
+.c-black {
+  color: #000000; }
+
+.bg-finance {
+  background-color: #D3E8CB; }
+
+.bg-brand {
+  background-color: #E87722; }
+
+.bg-grey {
+  background-color: #E9E9E9; }
+
+@font-face {
+  font-family: 'ritchie-icons';
+  src: url("../fonts/ritchie-icons.eot?o9cbw0");
+  src: url("../fonts/ritchie-icons.eot?o9cbw0#iefix") format("embedded-opentype"), url("../fonts/ritchie-icons.ttf?o9cbw0") format("truetype"), url("../fonts/ritchie-icons.woff?o9cbw0") format("woff"), url("../fonts/ritchie-icons.svg?o9cbw0#ritchie-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ritchie-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.i-size-med {
+  font-size: 20px;
+  vertical-align: middle; }
+
+.icon-pause:before {
+  content: "\e926"; }
+
+.icon-arrow-left:before {
+  content: "\e925"; }
+
+.icon-max-4:before {
+  content: "\e923"; }
+
+.icon-max-1:before {
+  content: "\e922"; }
+
+.icon-max-3:before {
+  content: "\e924"; }
+
+.icon-mail:before {
+  content: "\e921"; }
+
+.icon-sold:before {
+  content: "\e920"; }
+
+.icon-error-1:before {
+  content: "\e91f"; }
+
+.icon-trash:before {
+  content: "\e91e"; }
+
+.icon-ccy:before {
+  content: "\e91a"; }
+
+.icon-calculator:before {
+  content: "\e91b"; }
+
+.icon-unlocked:before {
+  content: "\e918"; }
+
+.icon-lock:before {
+  content: "\e919"; }
+
+.icon-settings:before {
+  content: "\e917"; }
+
+.icon-check-inner:before {
+  content: "\e915"; }
+
+.icon-info:before {
+  content: "\e916"; }
+
+.icon-popout:before {
+  content: "\e90b"; }
+
+.icon-next:before {
+  content: "\e90e"; }
+
+.icon-prev:before {
+  content: "\e914"; }
+
+.icon-arrow-down:before {
+  content: "\e900"; }
+
+.icon-audio:before {
+  content: "\e901"; }
+
+.icon-bid:before {
+  content: "\e902"; }
+
+.icon-cart:before {
+  content: "\e903"; }
+
+.icon-check:before {
+  content: "\e904"; }
+
+.icon-clock:before {
+  content: "\e905"; }
+
+.icon-close:before {
+  content: "\e906"; }
+
+.icon-dei:before {
+  content: "\e907"; }
+
+.icon-eye:before {
+  content: "\e908"; }
+
+.icon-help:before {
+  content: "\e909"; }
+
+.icon-loading:before {
+  content: "\e90a"; }
+
+.icon-Photos:before {
+  content: "\e90c"; }
+
+.icon-plus:before {
+  content: "\e90d"; }
+
+.icon-sale:before {
+  content: "\e90f"; }
+
+.icon-search:before {
+  content: "\e910"; }
+
+.icon-user:before {
+  content: "\e911"; }
+
+.icon-warning:before {
+  content: "\e912"; }
+
+.icon-warranty:before {
+  content: "\e913"; }
+
+.CAD .divider:before {
+  content: ","; }
+
+.CAD .dollars:before {
+  content: "$"; }
+
+.CAD .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.USD .divider:before {
+  content: ","; }
+
+.USD .dollars:before {
+  content: "$"; }
+
+.USD .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.SGD .divider:before {
+  content: ","; }
+
+.SGD .dollars:before {
+  content: "$"; }
+
+.SGD .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.NZD .divider:before {
+  content: ","; }
+
+.NZD .dollars:before {
+  content: "$"; }
+
+.NZD .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.AUD .divider:before {
+  content: ","; }
+
+.AUD .dollars:before {
+  content: "$"; }
+
+.AUD .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.MXN .divider:before {
+  content: ","; }
+
+.MXN .dollars:before {
+  content: "$"; }
+
+.MXN .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.ZAR .divider:before {
+  content: ","; }
+
+.ZAR .dollars:before {
+  content: "R"; }
+
+.ZAR .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.PLN .divider:before {
+  content: " "; }
+
+.PLN .dollars:before {
+  content: ""; }
+
+.PLN .dollars:after {
+  content: "zł";
+  margin-left: 3px; }
+
+.GBP .divider:before {
+  content: ","; }
+
+.GBP .dollars:before {
+  content: "£"; }
+
+.GBP .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.EUR .divider:before {
+  content: " "; }
+
+.EUR .dollars:before {
+  content: "€"; }
+
+.EUR .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.CNY .divider:before {
+  content: ","; }
+
+.CNY .dollars:before {
+  content: "¥"; }
+
+.CNY .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.JPY .divider:before {
+  content: ","; }
+
+.JPY .dollars:before {
+  content: "¥"; }
+
+.JPY .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.INR .divider:before {
+  content: ","; }
+
+.INR .dollars:before {
+  content: " ₹"; }
+
+.INR .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.AED .divider:before {
+  content: ","; }
+
+.AED .dollars:before {
+  content: ""; }
+
+.AED .dollars:after {
+  content: "د.إ";
+  margin-left: 3px; }
+
+.NOK .divider:before {
+  content: ","; }
+
+.NOK .dollars:before {
+  content: "kr"; }
+
+.NOK .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+.TRY .divider:before {
+  content: ","; }
+
+.TRY .dollars:before {
+  content: "₺"; }
+
+.TRY .dollars:after {
+  content: "";
+  margin-left: 3px; }
+
+body {
+  background-color: black;
+  color: white; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  max-width: 1280px;
+  height: 71vw;
+  max-height: 907px;
+  margin: 0 auto;
+  font-size: 2vw; }
+  @media (min-width: 80em) {
+    .wrapper {
+      font-size: 26px; } }
+
+.prototype-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 10px; }
+  .prototype-controls.s-hidden {
+    -webkit-transform: translateX(85%);
+            transform: translateX(85%); }
+  .prototype-controls div {
+    margin: 5px 0; }
+  .prototype-controls label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: block; }
+
+.bidding-area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px; }
+
+.current-prices label {
+  text-transform: uppercase;
+  display: inline-block;
+  width: 25%;
+  text-align: right; }
+
+.auction-ask {
+  font-size: 4.8vw;
+  margin-bottom: 10px; }
+
+.auction-bid {
+  font-size: 3.5vw; }
+
+.interested {
+  margin: 20px 0; }
+
+.interested--bidder {
+  margin-right: 10px; }
+  .interested--bidder:not(:last-child):after {
+    content: ","; }
+
+.proposals-area {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+#proposal {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 10px; }
+  #proposal.s-interest {
+    background-color: #FFE201; }
+  #proposal.s-siteon {
+    background-color: black; }
+  #proposal.s-openingoffer, #proposal.s-maxbid {
+    background-color: #0064FF; }
+  #proposal.s-internetbid {
+    background-color: #FF4242; }
+  #proposal.s-interneton {
+    background-color: #36AE4F; }
+  #proposal.s-maxon {
+    background-color: #E87722; }
+
+.proposal--header {
+  font-size: 2vw;
+  text-transform: uppercase;
+  margin-top: 10px; }
+
+.proposal--bid {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  position: relative;
+  font-size: 6vw; }
+
+.proposal--meta {
+  margin-top: auto; }
+
+.proposals--max {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  margin-top: auto; }
+
+.current-high-bid {
+  padding: 10px; }
+
+.bidding--footer {
+  margin-top: auto; }
+
+.footer--last-sold, .footer--clerk {
+  text-align: center;
+  border-top: 2px solid white;
+  padding: 10px; }
+
+.group-area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.g-half {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 10px;
+  border-left: 2px solid white; }
+
+.group--lots {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.lot {
+  padding: 5px; }
+  .lot.s-sold {
+    color: #FF4242; }
+  .lot.s-max-bid {
+    background-color: white;
+    color: black; }
+
+.group--column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.column--lot {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 10px; }
+
+.column--bidder {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3; }
+
+.column--price {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3; }

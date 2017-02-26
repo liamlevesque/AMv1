@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ritchie Bros. Live Auction</title>
+    <link href="assets/img/favicon.ico" rel="Shortcut Icon">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="js--body js--data-container CAD">
+	
+	<div class="wrapper">
+
+		<div class="bidding-area">
+			
+			<div class="bidding-header">
+				<div class="current-prices">
+					<div class="price ccy auction-ask"><label>Ask:</label> <span class="dollars" rv-html="bids.content.current.ask | price"></span></div>
+					<div class="price ccy auction-bid"><label>Bid:</label> <span class="dollars" rv-html="bids.content.current.bid | price"></span></div>
+				</div>
+				
+				<div class="interested">
+					<span class="interested--bidder" rv-each-interested="bids.content.interested | propertyList">{ interested.key }</span>
+				</div>
+			</div>
+			
+			<div class="proposals-area">
+				<div id="proposal" rv-addtextclass="bids.content.proposal.type" rv-class-s-interest="bids.content.interested | lengthToBool">
+					<div class="proposal--header" rv-show="bids.content.proposal.type | compare 'openingoffer'">
+						{ bids.content.proposal.type }
+					</div>
+					<div class="proposal--bid" rv-show="bids.content.proposal.type | compare 'internetbid,maxbid,openingoffer'">
+						<div class="h-va-center"><span class="dollars" rv-html="bids.content.proposal.bid | price"></span></div>
+						
+					</div>
+					<div class="proposal--meta" rv-show="bids.content.proposal.type | compare 'internetbid,maxbid,openingoffer'">
+						<div class="h-float-left">Lot { bids.content.proposal.lot }</div>
+						{ bids.content.proposal.bidder }
+						<div class="h-float-right">{ bids.content.proposal.location }</div>
+					</div>
+				</div>
+				<div class="proposals--max" rv-if="bids.content.group.maxbid" rv-class-s-visible="bids.content.group.maxbid">preBid: <span class="dollars" rv-html="bids.content.group.maxbid | price"></span></div>
+				<div class="current-high-bid">
+					<h3>Current High Bid</h3>
+					<span rv-if="bids.content.proposal.type | compare 'waiting,openingoffer'">Waiting for a bid</span>
+					<div rv-unless="bids.content.proposal.type | compare 'waiting,openingoffer'">
+						<div rv-if="bids.content.current.location | compare 'On Site'">
+							On Site
+						</div>
+						<div rv-unless="bids.content.current.location | compare 'On Site'" class="h-ta-center">
+							<div class="h-float-left">Lot { bids.content.current.lot }</div>
+							{bids.content.current.bidder}
+							<div class="h-float-right">{ bids.content.current.location }</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="bidding--footer">
+				<div class="footer--clerk">
+					<span>eClerk:  </span>{ bids.content.clerk }
+				</div>
+				<div class="footer--last-sold">
+					<div class="h-float-left">Lot { bids.content.previous.lot }</div>
+					{ bids.content.previous.bidder }
+					<div class="h-float-right">{ bids.content.previous.soldPrice }</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="group-area">
+			<div class="g-half">
+				<header class="group--column">
+					<h3 class="column--lot">Lot</h3>
+					<h3 class="column--bidder">Buyer</h3>
+					<h3 class="column--price">Price</h3>
+				</header>
+				<ul class="group--lots">
+					<li class="lot group--column" rv-each-lot="bids.content.group.lots < bids.content.group" rv-class-s-sold="lot.soldPrice" rv-class-s-max-bid="lot.maxBid">
+						<div class="column--lot">{ lot.lot }</div>
+						<div class="column--bidder">{ lot.bidder }</div>
+						<div class="column--price dollars" rv-html="lot.soldPrice | price"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="g-half">
+				<header class="group--column">
+					<h3 class="column--lot">Lot</h3>
+					<h3 class="column--bidder">Buyer</h3>
+					<h3 class="column--price">Price</h3>
+				</header>
+				<ul class="group--lots">
+					<li class="lot group--column" rv-each-lot="bids.content.group.lots < bids.content.group" rv-class-s-sold="lot.soldPrice" rv-class-s-max-bid="lot.maxBid">
+						<div class="column--lot">{ lot.lot }</div>
+						<div class="column--bidder">{ lot.bidder }</div>
+						<div class="column--price dollars" rv-html="lot.soldPrice | price"></div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="prototype-controls js--proto-controls">
+		<button class="prototype--hide" rv-on-click="controller.hideControls">{ bids.controlText }</button>
+		<!-- <button rv-on-click="controller.seedData">Load Sample Data</button> -->
+		<div>
+			<label>Lot Groups</label>
+			<button rv-on-click="controller.nextGroup">Next Group</button>
+			<button rv-on-click="controller.prevGroup">Previous Group</button>
+		</div>
+		<div>
+			<label>Bidding</label>
+			<button rv-on-click="controller.proposeBid" rv-disabled="bids.content.proposal.bid">Propose Bid</button>
+			<button rv-on-click="controller.proposeMaxBid" rv-disabled="bids.content.proposal.bid">Propose Max Bid</button><br/>
+			<button rv-on-click="controller.acceptProposal" rv-disabled="bids.content.proposal.bid | invert">Accept Bid</button>
+			<button rv-on-click="controller.onsiteBid">On Site Bid</button>
+		
+		</div>
+		<div>
+			<label>Interested Bidders</label>
+			<button rv-on-click="controller.showInterest">Add Interested User</button>
+			<button rv-on-click="controller.clearInterest">Clear Interested</button>
+		</div>
+		<button rv-on-click="controller.reset">Reset</button>
+	</div>
+	
+
+	<script type="text/javascript" src="assets/js/min/main-min.js"></script>
+
+</body>
+
+</html>

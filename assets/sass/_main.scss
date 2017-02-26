@@ -1,0 +1,52 @@
+
+body{
+	background-color: black;
+	color: white;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: row;
+
+	width: 100vw;
+	max-width: 1280px;
+	height: 71vw;
+	max-height: 907px;
+
+	margin: 0 auto;
+
+	@include fontsize(100);
+
+	@include breakpoint(large){
+		font-size: 26px;
+	}
+}
+
+.prototype-controls{
+	position: fixed;
+	bottom: 20px;
+	right: 0;
+	background-color: rgba(white, 0.8);
+	color: black;
+	padding: 10px;
+
+	&.s-hidden{
+		transform: translateX(85%);
+	}
+
+	div{
+		margin: 5px 0;
+	}
+
+	label{
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		display: block;
+	}
+}
+
+	
+
+
+
+	
