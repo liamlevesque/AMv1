@@ -1,0 +1,40 @@
+.g-wrapper,
+[class*="g-wrapper"] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Alignment per row */
+.g--top {
+  align-items: flex-start;
+}
+.g--bottom {
+  align-items: flex-end;
+}
+.g--center {
+  align-items: center;
+}
+
+/* Alignment per cell */
+.g-cell--top {
+  align-self: flex-start;
+}
+.g-cell--bottom {
+  align-self: flex-end;
+}
+.g-cell--center {
+  align-self: center;
+}
+
+.g-cell {
+  flex: 1;
+}
+
+$gridstops: "tenth" "10%", "quarter" "25%", "third" "33%", "half" "50%",
+  "two-thirds" "66%", "three-quarters" "75%", "full" "100%";
+
+@each $stop in $gridstops {
+  .g-cell__#{nth($stop,1)} {
+    flex-basis: #{nth($stop, 2)};
+  }
+}

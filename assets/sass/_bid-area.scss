@@ -1,124 +1,121 @@
-.bidding-area{
-	flex: 1;
+.bidding-area {
+  flex: 1;
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	padding: 10px;
-
+  padding: 10px;
 }
 
-	.bidding-header{
-		
-	}
+.bidding-header {
+}
 
-		.current-prices{
-			
-			label{
-				text-transform: uppercase;
-				display: inline-block;
-				width: 25%;
-				text-align: right;
-			}
+.current-prices {
+  label {
+    text-transform: uppercase;
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+  }
+}
 
-		}
-			
-			.auction-ask{
-				@include fontsize(600);
-				margin-bottom: 10px;
-			}
+.auction-ask {
+  @include fontsize(600);
+  margin-bottom: 10px;
+}
 
-			.auction-bid{
-				@include fontsize(400);	
-			}
+.auction-bid {
+  @include fontsize(400);
+}
 
+.interested {
+  margin: 20px 0;
+}
 
-		.interested{
-			margin: 20px 0;
-		}
+.interested--bidder {
+  margin-right: 10px;
 
-			.interested--bidder{
-				margin-right: 10px;
+  &:not(:last-child):after {
+    content: ",";
+  }
+}
 
-				&:not(:last-child):after{
-					content: ",";
-				}
-			}
+.proposals-area {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+}
 
-	.proposals-area{
-		flex: auto;
-		display: flex;
-		flex-direction: column;
-	}
+#proposal {
+  flex: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
 
-		#proposal{
-			flex: auto;
-			margin-bottom: 10px;
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			padding: 10px;
+  &.s-interest {
+    background-color: palette(yellow);
+  }
 
-			&.s-interest{
-				background-color: palette(yellow);
-			}
+  &.s-siteon {
+    background-color: black;
+  }
 
-			&.s-siteon{
-				background-color: black;
-			}
+  &.s-openingoffer,
+  &.s-maxbid {
+    background-color: palette(blue);
+  }
 
-			&.s-openingoffer, &.s-maxbid{
-				background-color: palette(blue);
-			}
+  &.s-internetbid {
+    background-color: palette(red);
+  }
 
-			&.s-internetbid{
-				background-color: palette(red);
-			}
+  &.s-interneton {
+    background-color: palette(green);
+  }
 
-			&.s-interneton{
-				background-color: palette(green);
-			}
+  &.s-maxon {
+    background-color: palette(orange);
+  }
+}
 
-			&.s-maxon{
-				background-color: palette(orange);
-			}
-		}
+.proposal--header {
+  @include fontsize(100);
+  text-transform: uppercase;
+  margin-top: 10px;
+}
 
-			.proposal--header{
-				@include fontsize(100);
-				text-transform: uppercase;
-				margin-top: 10px;
-			}
+.proposal--bid {
+  flex: auto;
+  position: relative;
+  @include fontsize(1000);
+}
 
-			.proposal--bid{
-				flex: auto;
-				position: relative;
-				@include fontsize(1000);
-			}
+.proposal--meta {
+  margin-top: auto;
+}
 
-			.proposal--meta{
-				margin-top: auto;
-			}
+.proposals--max {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  margin-top: auto;
+}
 
-		.proposals--max{
-			padding: 10px;
-			background-color: white;
-			color: black;
-			text-align: center;
-			font-weight: 700;
-			margin-top: auto;
-		}
+.current-high-bid {
+  padding: 10px;
+}
 
-		.current-high-bid{
-			padding: 10px;
-		}
+.bidding--footer {
+  margin-top: auto;
+}
 
-	.bidding--footer{
-		margin-top: auto;
-	}
-
-		.footer--last-sold, .footer--clerk {
-			text-align: center;
-			border-top: 2px solid white;
-			padding: 10px;
-		}
+.footer--last-sold,
+.footer--clerk {
+  text-align: center;
+  border-top: 2px solid white;
+  padding: 10px;
+}

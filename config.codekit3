@@ -7,7 +7,7 @@
 		"uuidString": "26FE04D7-4855-4E6B-B020-0E475A4DC16B"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "26097",
 "files": {
 	"\/assets\/css\/style.css": {
 		"aP": 1,
@@ -20,6 +20,7 @@
 		"oS": 0
 		},
 	"\/assets\/img\/favicon.ico": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/img\/favicon.ico",
@@ -31,10 +32,14 @@
 		"oA": 0,
 		"oAP": "\/assets\/img\/logo-square.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/js\/_bidding.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/assets\/js\/min\/_bidding-min.js",
@@ -44,6 +49,7 @@
 		},
 	"\/assets\/js\/_firebase.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/assets\/js\/min\/_firebase-min.js",
@@ -53,6 +59,7 @@
 		},
 	"\/assets\/js\/_formatters.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/assets\/js\/min\/_formatters-min.js",
@@ -70,6 +77,7 @@
 		},
 	"\/assets\/js\/main.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/assets\/js\/min\/main-min.js",
@@ -79,6 +87,7 @@
 		},
 	"\/assets\/js\/min\/main-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/min\/min\/main-min-min.js",
@@ -134,6 +143,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/_font.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_grid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -255,6 +277,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-app-externs.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-app-externs.js",
@@ -264,6 +287,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-app.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-app.js",
@@ -273,6 +297,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-auth-externs.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-auth-externs.js",
@@ -282,6 +307,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-auth.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-auth.js",
@@ -291,6 +317,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-database-externs.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-database-externs.js",
@@ -300,6 +327,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-database.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-database.js",
@@ -309,6 +337,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-messaging-externs.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-messaging-externs.js",
@@ -318,6 +347,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-messaging.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-messaging.js",
@@ -327,6 +357,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-storage-externs.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-storage-externs.js",
@@ -336,6 +367,7 @@
 		},
 	"\/bower_components\/firebase\/firebase-storage.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/firebase\/firebase-storage.js",
@@ -362,6 +394,7 @@
 		},
 	"\/bower_components\/firebase\/firebase.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/bower_components\/firebase\/firebase.js",
@@ -370,10 +403,10 @@
 		"tS": 0
 		},
 	"\/bower_components\/firebase\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -396,6 +429,7 @@
 		"oS": 1
 		},
 	"\/bower_components\/jquery\/AUTHORS.txt": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/AUTHORS.txt",
@@ -411,6 +445,7 @@
 		},
 	"\/bower_components\/jquery\/dist\/core.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/dist\/core.js",
@@ -420,6 +455,7 @@
 		},
 	"\/bower_components\/jquery\/dist\/jquery.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/dist\/jquery.js",
@@ -429,6 +465,7 @@
 		},
 	"\/bower_components\/jquery\/dist\/jquery.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/bower_components\/jquery\/dist\/jquery.min.js",
@@ -437,6 +474,7 @@
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/dist\/jquery.min.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/dist\/jquery.min.map",
@@ -444,6 +482,7 @@
 		},
 	"\/bower_components\/jquery\/dist\/jquery.slim.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/dist\/jquery.slim.js",
@@ -453,6 +492,7 @@
 		},
 	"\/bower_components\/jquery\/dist\/jquery.slim.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/dist\/jquery.slim.min.js",
@@ -461,6 +501,7 @@
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/dist\/jquery.slim.min.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/dist\/jquery.slim.min.map",
@@ -468,6 +509,7 @@
 		},
 	"\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.js",
@@ -477,6 +519,7 @@
 		},
 	"\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.js",
@@ -485,28 +528,31 @@
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.map": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.map",
 		"oF": 0
 		},
 	"\/bower_components\/jquery\/external\/sizzle\/LICENSE.txt": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/external\/sizzle\/LICENSE.txt",
 		"oF": 0
 		},
 	"\/bower_components\/jquery\/LICENSE.txt": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/LICENSE.txt",
 		"oF": 0
 		},
 	"\/bower_components\/jquery\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -530,6 +576,7 @@
 		},
 	"\/bower_components\/jquery\/src\/ajax.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/ajax.js",
@@ -539,6 +586,7 @@
 		},
 	"\/bower_components\/jquery\/src\/ajax\/jsonp.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/ajax\/jsonp.js",
@@ -548,6 +596,7 @@
 		},
 	"\/bower_components\/jquery\/src\/ajax\/load.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/ajax\/load.js",
@@ -557,6 +606,7 @@
 		},
 	"\/bower_components\/jquery\/src\/ajax\/parseXML.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/ajax\/parseXML.js",
@@ -566,6 +616,7 @@
 		},
 	"\/bower_components\/jquery\/src\/ajax\/script.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/ajax\/script.js",
@@ -575,6 +626,7 @@
 		},
 	"\/bower_components\/jquery\/src\/ajax\/var\/location.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/ajax\/var\/location.js",
@@ -584,6 +636,7 @@
 		},
 	"\/bower_components\/jquery\/src\/ajax\/var\/nonce.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/ajax\/var\/nonce.js",
@@ -593,6 +646,7 @@
 		},
 	"\/bower_components\/jquery\/src\/ajax\/var\/rquery.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/ajax\/var\/rquery.js",
@@ -602,6 +656,7 @@
 		},
 	"\/bower_components\/jquery\/src\/ajax\/xhr.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/ajax\/xhr.js",
@@ -611,6 +666,7 @@
 		},
 	"\/bower_components\/jquery\/src\/attributes.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/attributes.js",
@@ -620,6 +676,7 @@
 		},
 	"\/bower_components\/jquery\/src\/attributes\/attr.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/attributes\/attr.js",
@@ -629,6 +686,7 @@
 		},
 	"\/bower_components\/jquery\/src\/attributes\/classes.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/attributes\/classes.js",
@@ -638,6 +696,7 @@
 		},
 	"\/bower_components\/jquery\/src\/attributes\/prop.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/attributes\/prop.js",
@@ -647,6 +706,7 @@
 		},
 	"\/bower_components\/jquery\/src\/attributes\/support.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/attributes\/support.js",
@@ -656,6 +716,7 @@
 		},
 	"\/bower_components\/jquery\/src\/attributes\/val.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/attributes\/val.js",
@@ -665,6 +726,7 @@
 		},
 	"\/bower_components\/jquery\/src\/callbacks.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/callbacks.js",
@@ -674,6 +736,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core.js",
@@ -683,6 +746,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/access.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/access.js",
@@ -692,6 +756,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/DOMEval.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/DOMEval.js",
@@ -701,6 +766,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/init.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/init.js",
@@ -710,6 +776,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/parseHTML.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/parseHTML.js",
@@ -719,6 +786,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/ready-no-deferred.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/ready-no-deferred.js",
@@ -728,6 +796,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/ready.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/ready.js",
@@ -737,6 +806,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/readyException.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/readyException.js",
@@ -746,6 +816,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/stripAndCollapse.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/stripAndCollapse.js",
@@ -755,6 +826,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/support.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/support.js",
@@ -764,6 +836,7 @@
 		},
 	"\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js",
@@ -773,6 +846,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css.js",
@@ -782,6 +856,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/addGetHookIf.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/addGetHookIf.js",
@@ -791,6 +866,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/adjustCSS.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/adjustCSS.js",
@@ -800,6 +876,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/curCSS.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/curCSS.js",
@@ -809,6 +886,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js",
@@ -818,6 +896,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/showHide.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/showHide.js",
@@ -827,6 +906,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/support.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/support.js",
@@ -836,6 +916,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/cssExpand.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/var\/cssExpand.js",
@@ -845,6 +926,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/getStyles.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/var\/getStyles.js",
@@ -854,6 +936,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/isHiddenWithinTree.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/var\/isHiddenWithinTree.js",
@@ -863,6 +946,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/rmargin.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/var\/rmargin.js",
@@ -872,6 +956,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js",
@@ -881,6 +966,7 @@
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/swap.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/css\/var\/swap.js",
@@ -890,6 +976,7 @@
 		},
 	"\/bower_components\/jquery\/src\/data.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/data.js",
@@ -899,6 +986,7 @@
 		},
 	"\/bower_components\/jquery\/src\/data\/Data.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/data\/Data.js",
@@ -908,6 +996,7 @@
 		},
 	"\/bower_components\/jquery\/src\/data\/var\/acceptData.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/data\/var\/acceptData.js",
@@ -917,6 +1006,7 @@
 		},
 	"\/bower_components\/jquery\/src\/data\/var\/dataPriv.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/data\/var\/dataPriv.js",
@@ -926,6 +1016,7 @@
 		},
 	"\/bower_components\/jquery\/src\/data\/var\/dataUser.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/data\/var\/dataUser.js",
@@ -935,6 +1026,7 @@
 		},
 	"\/bower_components\/jquery\/src\/deferred.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/deferred.js",
@@ -944,6 +1036,7 @@
 		},
 	"\/bower_components\/jquery\/src\/deferred\/exceptionHook.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/deferred\/exceptionHook.js",
@@ -953,6 +1046,7 @@
 		},
 	"\/bower_components\/jquery\/src\/deprecated.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/deprecated.js",
@@ -962,6 +1056,7 @@
 		},
 	"\/bower_components\/jquery\/src\/dimensions.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/dimensions.js",
@@ -971,6 +1066,7 @@
 		},
 	"\/bower_components\/jquery\/src\/effects.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/effects.js",
@@ -980,6 +1076,7 @@
 		},
 	"\/bower_components\/jquery\/src\/effects\/animatedSelector.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/effects\/animatedSelector.js",
@@ -989,6 +1086,7 @@
 		},
 	"\/bower_components\/jquery\/src\/effects\/Tween.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/effects\/Tween.js",
@@ -998,6 +1096,7 @@
 		},
 	"\/bower_components\/jquery\/src\/event.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/event.js",
@@ -1007,6 +1106,7 @@
 		},
 	"\/bower_components\/jquery\/src\/event\/ajax.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/event\/ajax.js",
@@ -1016,6 +1116,7 @@
 		},
 	"\/bower_components\/jquery\/src\/event\/alias.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/event\/alias.js",
@@ -1025,6 +1126,7 @@
 		},
 	"\/bower_components\/jquery\/src\/event\/focusin.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/event\/focusin.js",
@@ -1034,6 +1136,7 @@
 		},
 	"\/bower_components\/jquery\/src\/event\/support.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/event\/support.js",
@@ -1043,6 +1146,7 @@
 		},
 	"\/bower_components\/jquery\/src\/event\/trigger.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/event\/trigger.js",
@@ -1052,6 +1156,7 @@
 		},
 	"\/bower_components\/jquery\/src\/exports\/amd.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/exports\/amd.js",
@@ -1061,6 +1166,7 @@
 		},
 	"\/bower_components\/jquery\/src\/exports\/global.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/exports\/global.js",
@@ -1070,6 +1176,7 @@
 		},
 	"\/bower_components\/jquery\/src\/jquery.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/jquery.js",
@@ -1079,6 +1186,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation.js",
@@ -1088,6 +1196,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js",
@@ -1097,6 +1206,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/buildFragment.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/buildFragment.js",
@@ -1106,6 +1216,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/getAll.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/getAll.js",
@@ -1115,6 +1226,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/setGlobalEval.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/setGlobalEval.js",
@@ -1124,6 +1236,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/support.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/support.js",
@@ -1133,6 +1246,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js",
@@ -1142,6 +1256,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/var\/rscriptType.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/var\/rscriptType.js",
@@ -1151,6 +1266,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/var\/rtagName.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/var\/rtagName.js",
@@ -1160,6 +1276,7 @@
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/wrapMap.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/manipulation\/wrapMap.js",
@@ -1169,6 +1286,7 @@
 		},
 	"\/bower_components\/jquery\/src\/offset.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/offset.js",
@@ -1178,6 +1296,7 @@
 		},
 	"\/bower_components\/jquery\/src\/queue.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/queue.js",
@@ -1187,6 +1306,7 @@
 		},
 	"\/bower_components\/jquery\/src\/queue\/delay.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/queue\/delay.js",
@@ -1196,6 +1316,7 @@
 		},
 	"\/bower_components\/jquery\/src\/selector-native.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/selector-native.js",
@@ -1205,6 +1326,7 @@
 		},
 	"\/bower_components\/jquery\/src\/selector-sizzle.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/selector-sizzle.js",
@@ -1214,6 +1336,7 @@
 		},
 	"\/bower_components\/jquery\/src\/selector.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/selector.js",
@@ -1223,6 +1346,7 @@
 		},
 	"\/bower_components\/jquery\/src\/serialize.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/serialize.js",
@@ -1232,6 +1356,7 @@
 		},
 	"\/bower_components\/jquery\/src\/traversing.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/traversing.js",
@@ -1241,6 +1366,7 @@
 		},
 	"\/bower_components\/jquery\/src\/traversing\/findFilter.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/traversing\/findFilter.js",
@@ -1250,6 +1376,7 @@
 		},
 	"\/bower_components\/jquery\/src\/traversing\/var\/dir.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/traversing\/var\/dir.js",
@@ -1259,6 +1386,7 @@
 		},
 	"\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js",
@@ -1268,6 +1396,7 @@
 		},
 	"\/bower_components\/jquery\/src\/traversing\/var\/siblings.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/traversing\/var\/siblings.js",
@@ -1277,6 +1406,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/arr.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/arr.js",
@@ -1286,6 +1416,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/class2type.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/class2type.js",
@@ -1295,6 +1426,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/concat.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/concat.js",
@@ -1304,6 +1436,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/document.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/document.js",
@@ -1313,6 +1446,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/documentElement.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/documentElement.js",
@@ -1322,6 +1456,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/fnToString.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/fnToString.js",
@@ -1331,6 +1466,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/getProto.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/getProto.js",
@@ -1340,6 +1476,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/hasOwn.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/hasOwn.js",
@@ -1349,6 +1486,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/indexOf.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/indexOf.js",
@@ -1358,6 +1496,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/ObjectFunctionString.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/ObjectFunctionString.js",
@@ -1367,6 +1506,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/pnum.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/pnum.js",
@@ -1376,6 +1516,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/push.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/push.js",
@@ -1385,6 +1526,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/rcssNum.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/rcssNum.js",
@@ -1394,6 +1536,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/rnothtmlwhite.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/rnothtmlwhite.js",
@@ -1403,6 +1546,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/slice.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/slice.js",
@@ -1412,6 +1556,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/support.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/support.js",
@@ -1421,6 +1566,7 @@
 		},
 	"\/bower_components\/jquery\/src\/var\/toString.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/var\/toString.js",
@@ -1430,6 +1576,7 @@
 		},
 	"\/bower_components\/jquery\/src\/wrap.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/jquery\/src\/wrap.js",
@@ -1446,6 +1593,7 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/.gitignore": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/.gitignore",
@@ -1460,10 +1608,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/CHANGELOG.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1487,6 +1635,7 @@
 		},
 	"\/bower_components\/rivets\/dist\/rivets.bundled.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/bower_components\/rivets\/dist\/rivets.bundled.min.js",
@@ -1496,6 +1645,7 @@
 		},
 	"\/bower_components\/rivets\/dist\/rivets.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/dist\/rivets.js",
@@ -1505,6 +1655,7 @@
 		},
 	"\/bower_components\/rivets\/dist\/rivets.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/dist\/rivets.min.js",
@@ -1513,12 +1664,14 @@
 		"tS": 0
 		},
 	"\/bower_components\/rivets\/doc.sh": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/doc.sh",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/_layout.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
@@ -1527,6 +1680,7 @@
 		"oS": 0
 		},
 	"\/bower_components\/rivets\/docs\/CNAME": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/CNAME",
@@ -1597,10 +1751,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/adapters.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1615,10 +1769,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/adapters\/creating.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1633,10 +1787,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/adapters\/default.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1651,10 +1805,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/binders.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1669,10 +1823,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/binders\/api.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1687,10 +1841,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/binders\/one-way.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1705,10 +1859,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/binders\/two-way.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1723,10 +1877,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/components.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1741,10 +1895,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/computed-properties.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1759,10 +1913,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/formatters.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1777,10 +1931,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/formatters\/arguments.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1795,10 +1949,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/formatters\/one-way.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1813,10 +1967,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/formatters\/two-way.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1831,10 +1985,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/functions-call.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1849,10 +2003,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/index.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1867,10 +2021,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/install.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1885,10 +2039,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/iteration\/index.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1903,10 +2057,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/iteration\/iteration.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1921,10 +2075,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/usage\/binding.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1939,10 +2093,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/usage\/configuring.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1957,10 +2111,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/_sections\/usage\/templates.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -1975,6 +2129,7 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/guide\/index.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 2,
@@ -1983,10 +2138,10 @@
 		"oS": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/[attribute].md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2001,10 +2156,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/checked.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2019,10 +2174,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/class-[classname].md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2037,10 +2192,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/disabled.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2055,10 +2210,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/each-[item].md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2073,10 +2228,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/enabled.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2091,10 +2246,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/hide.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2109,10 +2264,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/html.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2127,10 +2282,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/if.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2145,10 +2300,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/on-[event].md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2163,10 +2318,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/show.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2181,10 +2336,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/text.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2199,10 +2354,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/unchecked.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2217,10 +2372,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/unless.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2235,10 +2390,10 @@
 		"uCM": 0
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/_binders\/value.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2261,6 +2416,7 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/docs\/docs\/reference\/index.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 2,
@@ -2269,6 +2425,7 @@
 		"oS": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.eot",
@@ -2285,18 +2442,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo-social\/entypo-social.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.eot",
@@ -2313,18 +2473,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/entypo\/entypo.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.eot",
@@ -2341,18 +2504,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Black-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.eot",
@@ -2369,18 +2535,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BlackIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.eot",
@@ -2397,18 +2566,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Bold-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.eot",
@@ -2425,18 +2597,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-BoldIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.eot",
@@ -2453,18 +2628,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Light-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.eot",
@@ -2481,18 +2659,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-LightIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.eot",
@@ -2509,18 +2690,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Reg-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.eot",
@@ -2537,18 +2721,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-RegIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.eot",
@@ -2565,18 +2752,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Sbold-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.eot",
@@ -2593,18 +2783,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-SboldIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.eot",
@@ -2621,18 +2814,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Thin-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.eot",
@@ -2649,18 +2845,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-ThinIt-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.eot",
@@ -2677,18 +2876,21 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-Xbold-webfont.woff",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.eot",
@@ -2705,12 +2907,14 @@
 		"prP": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.ttf",
 		"oF": 0
 		},
 	"\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/fonts\/proxima-nova\/ProximaNova-XboldIt-webfont.woff",
@@ -2722,7 +2926,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/img\/attendease.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/rivets\/docs\/img\/dell.png": {
 		"ft": 32768,
@@ -2730,7 +2937,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/img\/dell.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/rivets\/docs\/img\/disco.png": {
 		"ft": 32768,
@@ -2738,7 +2948,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/img\/disco.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/rivets\/docs\/img\/kin.png": {
 		"ft": 32768,
@@ -2746,7 +2959,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/img\/kin.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/rivets\/docs\/img\/mikeric.jpg": {
 		"ft": 16384,
@@ -2754,7 +2970,9 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/img\/mikeric.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/bower_components\/rivets\/docs\/img\/vs.png": {
 		"ft": 32768,
@@ -2762,9 +2980,13 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/img\/vs.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/rivets\/docs\/index.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 2,
@@ -2774,6 +2996,7 @@
 		},
 	"\/bower_components\/rivets\/docs\/js\/app.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/js\/app.js",
@@ -2783,6 +3006,7 @@
 		},
 	"\/bower_components\/rivets\/docs\/js\/bootstrap.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/js\/bootstrap.min.js",
@@ -2792,6 +3016,7 @@
 		},
 	"\/bower_components\/rivets\/docs\/js\/highlight.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/js\/highlight.js",
@@ -2801,6 +3026,7 @@
 		},
 	"\/bower_components\/rivets\/docs\/js\/jquery.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/docs\/js\/jquery.js",
@@ -2810,6 +3036,7 @@
 		},
 	"\/bower_components\/rivets\/gulpfile.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/gulpfile.js",
@@ -2818,6 +3045,7 @@
 		"tS": 0
 		},
 	"\/bower_components\/rivets\/LICENSE": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/rivets\/LICENSE",
@@ -2832,10 +3060,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/rivets\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -2857,7 +3085,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/adapter.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/binders.coffee": {
 		"ft": 32,
@@ -2867,7 +3096,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/binders.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/bindings.coffee": {
 		"ft": 32,
@@ -2877,7 +3107,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/bindings.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/export.coffee": {
 		"ft": 32,
@@ -2887,7 +3118,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/export.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/formatters.coffee": {
 		"ft": 32,
@@ -2897,7 +3129,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/formatters.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/parsers.coffee": {
 		"ft": 32,
@@ -2907,7 +3140,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/parsers.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/rivets.coffee": {
 		"ft": 32,
@@ -2917,7 +3151,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/rivets.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/util.coffee": {
 		"ft": 32,
@@ -2927,7 +3162,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/util.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/rivets\/src\/view.coffee": {
 		"ft": 32,
@@ -2937,7 +3173,8 @@
 		"oAP": "\/bower_components\/rivets\/src\/view.coffee",
 		"oF": 0,
 		"oS": 0,
-		"sC": 1
+		"sC": 1,
+		"tS": 1
 		},
 	"\/bower_components\/sightglass\/.bower.json": {
 		"ft": 524288,
@@ -2965,6 +3202,7 @@
 		},
 	"\/bower_components\/sightglass\/index.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/sightglass\/index.js",
@@ -2973,6 +3211,7 @@
 		"tS": 0
 		},
 	"\/bower_components\/sightglass\/LICENSE": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bower_components\/sightglass\/LICENSE",
@@ -2987,10 +3226,10 @@
 		"oS": 1
 		},
 	"\/bower_components\/sightglass\/README.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -3005,9 +3244,17 @@
 		"uCM": 0
 		},
 	"\/index.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.html",
+		"oF": 0
+		},
+	"\/Orlando-Marquee.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Orlando-Marquee.html",
 		"oF": 0
 		}
 	},
@@ -3461,6 +3708,10 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
@@ -3468,6 +3719,10 @@
 		"array-callback-return": {
 			"active": 0,
 			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
 			},
 		"arrow-body-style": {
 			"active": 0,
@@ -3565,6 +3820,10 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -3581,9 +3840,17 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -3641,9 +3908,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -3673,6 +3940,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -3682,14 +3953,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -3713,6 +3976,10 @@
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
 			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-caller": {
 			"active": 0,
 			"optionString": ""
@@ -3727,6 +3994,10 @@
 			},
 		"no-class-assign": {
 			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
 			"optionString": ""
 			},
 		"no-cond-assign": {
@@ -3929,6 +4200,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -4006,6 +4281,10 @@
 			"optionString": ""
 			},
 		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -4205,6 +4484,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
 		"object-curly-newline": {
 			"active": 0,
 			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
@@ -4241,6 +4524,10 @@
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
 			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
 		"prefer-arrow-callback": {
 			"active": 0,
 			"optionString": ""
@@ -4256,6 +4543,10 @@
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -4305,6 +4596,10 @@
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
 			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
 		"sort-imports": {
 			"active": 0,
 			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
@@ -4345,11 +4640,19 @@
 			"active": 0,
 			"optionString": "'safe'"
 			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
+			},
 		"symbol-description": {
 			"active": 0,
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
@@ -4753,7 +5056,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -4786,6 +5090,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -4796,7 +5101,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -4820,21 +5126,14 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -4866,13 +5165,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -4881,7 +5180,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -4889,7 +5189,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -4899,7 +5201,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -4927,7 +5230,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
@@ -4974,9 +5278,11 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
+	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
