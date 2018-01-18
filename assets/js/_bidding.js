@@ -112,6 +112,7 @@ var bidding = {
 
   sellLot: function() {
     bidding.updateProposal(null, null, null, null, "waiting");
+    bidding.clearInterested();
     dataRef.child("/current/status").set("sold");
   },
 
