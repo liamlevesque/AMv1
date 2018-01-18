@@ -30,34 +30,40 @@
 
 			<div class="proposals-area">
 				<div id="proposal" rv-addtextclass="bids.content.proposal.type" rv-class-s-interest="bids.content.interested | lengthToBool">
-					<div class="proposal--header" rv-show="bids.content.proposal.type | compare 'openingoffer'">
-						{ bids.content.proposal.type }
+					<div class="proposal--bid" rv-if="bids.content.current.status | compare 'sold'">
+						<div class="h-va-center">
+							Sold
+							<span rv-unless="bids.content.current.location | compare 'On Site'"> Internet </span>
+							<span rv-if="bids.content.current.location | compare 'On Site'">On Site</span>
+						</div>
 					</div>
 					<div class="proposal--bid" rv-show="bids.content.proposal.type | compare 'internetbid,maxbid,openingoffer'">
 						<div class="h-va-center">
 							<span class="dollars" rv-html="bids.content.proposal.bid | price"></span>
 						</div>
-
 					</div>
 					<div class="proposal--meta g-wrapper" rv-show="bids.content.proposal.type | compare 'internetbid,maxbid,openingoffer'">
-						<div class="g-cell h-ta-left">{ bids.content.proposal.bidder }</div>
+						<div class="g-cell h-ta-left">
+							<span rv-unless="bids.content.current.location | compare 'On Site'"> Internet </span>
+							<span rv-if="bids.content.current.location | compare 'On Site'">On Site</span>
+						</div>
 						<div class="g-cell h-ta-right">{ bids.content.proposal.location }</div>
 					</div>
 				</div>
-				<div class="proposals--max" rv-if="bids.content.group.maxbid" rv-class-s-visible="bids.content.group.maxbid">preBid:
-					<span class="dollars" rv-html="bids.content.group.maxbid | price"></span>
-				</div>
+
 				<div class="current-high-bid">
 					<h3>Current High Bid</h3>
-					<span rv-if="bids.content.proposal.type | compare 'waiting,openingoffer'">Waiting for a bid</span>
-					<div rv-unless="bids.content.proposal.type | compare 'waiting,openingoffer'">
+					<span rv-if="bids.content.current.status | compare 'waiting'">Waiting for a bid</span>
+					<div rv-unless="bids.content.current.status | compare 'waiting'">
 						<div rv-if="bids.content.current.location | compare 'On Site'">
 							On Site
 						</div>
-						<div rv-unless="bids.content.current.location | compare 'On Site'" class="h-ta-center">
-							<div class="h-float-left">Lot { bids.content.current.lot }</div>
-							{bids.content.current.bidder}
-							<div class="h-float-right">{ bids.content.current.location }</div>
+						<div class="g-wrapper" rv-unless="bids.content.current.location | compare 'On Site'" class="h-ta-center">
+							<div class="g-cell">
+								<span rv-if="bids.content.current.status | compare 'sold'">{bids.content.current.bidder}</span>
+								<span rv-unless="bids.content.current.status | compare 'sold'">Internet</span>
+							</div>
+							<div class="g-cell h-ta-right">{ bids.content.current.location }</div>
 						</div>
 					</div>
 				</div>
@@ -68,7 +74,7 @@
 				<div class="g-cell">
 					<span>Auctioneer: </span>{ bids.content.auctioneer }
 				</div>
-				<div class="g-cell">
+				<div class="g-cell h-ta-right">
 					<span>eClerk: </span>{ bids.content.clerk }
 				</div>
 			</div>
@@ -85,7 +91,10 @@
 			<button rv-on-click="controller.acceptProposal" rv-disabled="bids.content.proposal.bid | invert">Accept Bid</button>
 			<br/>
 			<button rv-on-click="controller.onsiteBid">On Site Bid</button>
-
+		</div>
+		<div>
+			<label>Selling</label>
+			<button rv-on-click="controller.sellLot">Sell Lot</button>
 		</div>
 		<div>
 			<label>Interested Bidders</label>

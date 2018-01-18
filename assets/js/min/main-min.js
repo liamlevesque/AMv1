@@ -631,245 +631,286 @@ firebase.initializeApp(config);
 
 const appdb = firebase.database(); 
 
-rivets.formatters.price = function(value){
-	return formatprice(value);
-}
-
-function formatprice(amt){
-	if(amt === 0) return 0;
-	else if(!amt) return null;
-
-	var price;
-
-	if($('#js--body').hasClass('INR')) 
-		price = amt.toString().replace(/(\d)(?=(\d\d)+\d$)/g, '$1<span class="divider"></span>');
-	else 
-		price = amt.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '<span class="divider"></span>');
-
-	return price; 
-}
-
-rivets.formatters.compare = function(value, comparisons){
-	if(typeof value == "undefined" || typeof comparisons == "undefined") return false;
-	
-	var args = comparisons.split(',');
-	if(args.includes(value)) return true;
-	return false;
+rivets.formatters.price = function(value) {
+  return formatprice(value);
 };
 
-rivets.binders.addtextclass = function(el,value){
-	if(value === "") return false;
-	$(el).removeClass().addClass('s-'+ value);
+function formatprice(amt) {
+  if (amt === 0) return 0;
+  else if (!amt) return null;
+
+  var price;
+
+  if ($("#js--body").hasClass("INR"))
+    price = amt
+      .toString()
+      .replace(/(\d)(?=(\d\d)+\d$)/g, '$1<span class="divider"></span>');
+  else
+    price = amt
+      .toString()
+      .replace(/\B(?=(\d{3})+(?!\d))/g, '<span class="divider"></span>');
+
+  return price;
 }
 
-rivets.formatters.lengthToBool = function(value){
-	if(typeof value == 'undefined') return false;
-	if(value.length === 0) return false;
-	return true;
+rivets.formatters.compare = function(value, comparisons) {
+  if (typeof value == "undefined" || typeof comparisons == "undefined")
+    return false;
+
+  var args = comparisons.split(",");
+  if (args.includes(value)) return true;
+  return false;
 };
 
-rivets.formatters.invert = function(value){
-	console.log(value);
-	if(typeof value != "undefined") return false;
-	return true;
-}
+rivets.binders.addtextclass = function(el, value) {
+  if (value === "") return false;
+  $(el)
+    .removeClass()
+    .addClass("s-" + value);
+};
+
+rivets.formatters.lengthToBool = function(value) {
+  if (typeof value == "undefined") return false;
+  if (value.length === 0) return false;
+  return true;
+};
+
+rivets.formatters.invert = function(value) {
+  console.log(value);
+  if (typeof value != "undefined") return false;
+  return true;
+};
 
 rivets.formatters.propertyList = function(obj) {
   return (function() {
-    var properties = []
+    var properties = [];
     for (key in obj) {
-      properties.push({key: key, value: obj[key]})
+      properties.push({ key: key, value: obj[key] });
     }
-    return properties
+    return properties;
   })();
-}
+};
 
-$(function(){
+// rivets.formatters.isSold = function(status){
+// 	return
+// }
 
-	dataRef.on('value', function(snapshot) {
-		if(bidding.data.content === null){ //IF THIS IS FIRST RUN, BIND AFTER GETTING DATA
-			bidding.data.content = snapshot.val();
-			bindData();
-		}
-		else bidding.data.content = snapshot.val();
 
-		bidding.parseGroup();
-		bidding.parseInterested();
-	    
-	});
+$(function() {
+  dataRef.on("value", function(snapshot) {
+    if (bidding.data.content === null) {
+      //IF THIS IS FIRST RUN, BIND AFTER GETTING DATA
+      bidding.data.content = snapshot.val();
+      bindData();
+    } else bidding.data.content = snapshot.val();
 
-	bidding.resetBids(1);
+    bidding.parseGroup();
+    bidding.parseInterested();
+  });
 
+  bidding.resetBids(1);
 });
 
 const dataRef = appdb.ref();
 
 var bidding = {
+  data: {
+    content: null,
+    controlText: "> Hide"
+  },
 
-	data: {
-		content: null,
-		controlText: "> Hide",
-	},
+  parseGroup: function() {
+    var lotlist = bidRef.content.alllots;
+    var currentGroup = bidRef.content.group.currentGroup;
+    var groupLots = [];
+    var groupMax = null;
+    var maxLot = null;
+    var j = 0;
 
-	parseGroup: function(){
-		var lotlist = bidRef.content.alllots;
-		var currentGroup = bidRef.content.group.currentGroup;
-		var groupLots = [];
-		var groupMax = null;
-		var maxLot = null;
-		var j = 0;
+    for (var i = 0; i < lotlist.length; i++) {
+      if (lotlist[i].group === currentGroup) {
+        j++;
+        groupLots.push(lotlist[i]);
+        if (lotlist[i].maxBid > groupMax) {
+          groupMax = lotlist[i].maxBid;
+          maxLot = j;
+        }
+      }
+    }
 
-		for(var i = 0; i < lotlist.length; i++){
-			if(lotlist[i].group === currentGroup){ 
-				j++;
-				groupLots.push(lotlist[i]);
-				if(lotlist[i].maxBid > groupMax){
-					groupMax = lotlist[i].maxBid;
-					maxLot = j;
-				}
-			}
-		}
+    if (groupMax > 0) {
+      bidRef.content.group.maxbid = groupMax;
+      bidding.addInterestedBidder(77777);
+      if (bidRef.content.proposal.type === "waiting")
+        bidding.updateProposal(
+          bidRef.content.current.ask,
+          "BC, CAN",
+          77777,
+          groupLots[maxLot].lot,
+          "openingoffer"
+        );
+    }
+    bidRef.content.group.lots = groupLots;
+  },
 
-		if(groupMax > 0){
-			bidRef.content.group.maxbid = groupMax;
-			bidding.addInterestedBidder(77777);
-			if(bidRef.content.proposal.type === 'waiting') bidding.updateProposal(bidRef.content.current.ask,"BC, CAN",77777,groupLots[maxLot].lot,'openingoffer');
-		}
-		bidRef.content.group.lots = groupLots;
-	},
+  parseInterested: function() {
+    // var interested = bidRef.content.interested;
+    // var newInterest = [];
+    // for( i in interested){
+    // 	newInterest.push({ bidder : i });
+    // }
+    // bidRef.content.interested = newInterest;
+  },
 
-	parseInterested: function(){
-		// var interested = bidRef.content.interested;
-		// var newInterest = [];
+  addInterestedBidder: function(bidder) {
+    dataRef.child("/interested/" + bidder).set(true);
+  },
 
-		// for( i in interested){
-		// 	newInterest.push({ bidder : i });	
-		// }
-		// bidRef.content.interested = newInterest;
-	},
+  clearInterested: function() {
+    dataRef.child("/interested/").remove();
+  },
 
-	addInterestedBidder: function(bidder){
-		dataRef.child('/interested/'+bidder).set(true);
-	},
+  updateProposal: function(bid, loc, bidder, lot, type) {
+    var proposal = {
+      bid: bid,
+      location: loc,
+      bidder: "77777",
+      lot: lot,
+      type: type
+    };
 
-	clearInterested: function(){
-		dataRef.child('/interested/').remove();
-	},
+    dataRef.child("/proposal").set(proposal);
+  },
 
-	updateProposal: function(bid,loc,bidder,lot,type){
-		var proposal = {
-			bid: bid,
-			location: loc,
-			bidder: bidder,
-			lot: lot,
-			type: type
-		};
+  placeBid: function(amt, loc, lot, bidder) {
+    var increment = 2500;
 
-		dataRef.child('/proposal').set(proposal);
-	},
+    var current = {
+      bid: amt,
+      ask: amt + increment,
+      bidder: bidder,
+      location: loc,
+      lot: lot,
+      status: "bidding"
+    };
 
-	placeBid:function(amt,loc,lot,bidder){
-		var increment = 2500;
-		
-		var current = {
-			bid: amt,
-			ask: amt + increment,
-			bidder: bidder,
-			location: loc,
-			lot: lot,
-		};
+    dataRef.child("/current").set(current);
+  },
 
-		dataRef.child('/current').set(current);
-	},
+  resetBids: function(group) {
+    dataRef.child("/group/").set({
+      currentGroup: group,
+      maxbid: null
+    });
+    bidding.placeBid(0, "", "", "");
+    dataRef.child("/current/status").set("waiting");
+    bidding.updateProposal(null, null, null, null, "waiting");
+    bidding.clearInterested();
+  },
 
-	resetBids: function(group){
-		dataRef.child('/group/').set({
-			currentGroup: group,
-			maxbid: null
-		});
-		bidding.placeBid(0, "",null,null);
-		bidding.updateProposal(null,null,null,null,'waiting');
-		bidding.clearInterested();
-		
-	},
+  sellLot: function() {
+    bidding.updateProposal(null, null, null, null, "waiting");
+    dataRef.child("/current/status").set("sold");
+  },
 
-	controller: {
+  controller: {
+    hideControls: function() {
+      $(".js--proto-controls").toggleClass("s-hidden");
+      if ($(".js--proto-controls").hasClass("s-hidden"))
+        bidding.data.controlText = "< Show";
+      else bidding.data.controlText = "> Hide";
+    },
 
-		hideControls: function(){
-			$('.js--proto-controls').toggleClass('s-hidden');
-			if($('.js--proto-controls').hasClass('s-hidden')) bidding.data.controlText = "< Show";
-			else bidding.data.controlText = "> Hide";
-		},
+    nextGroup: function() {
+      bidding.resetBids(bidRef.content.group.currentGroup + 1);
+    },
 
-		nextGroup: function(){
-			bidding.resetBids(bidRef.content.group.currentGroup + 1);
-		},
-		
-		prevGroup: function(){
-			if(bidRef.content.group.currentGroup > 1) bidding.resetBids(bidRef.content.group.currentGroup - 1);
-		},
-		reset: function(){
-			bidding.resetBids(1);
-		},
+    prevGroup: function() {
+      if (bidRef.content.group.currentGroup > 1)
+        bidding.resetBids(bidRef.content.group.currentGroup - 1);
+    },
+    reset: function() {
+      bidding.resetBids(1);
+    },
 
-		showInterest: function(){
-			bidding.addInterestedBidder(Math.floor(Math.random() * (15000 - 10000)) + 10000);
-		},
+    sellLot: function() {
+      bidding.sellLot();
+    },
 
-		clearInterest: function(){
-			bidding.clearInterested();
-		},
+    showInterest: function() {
+      bidding.addInterestedBidder(
+        Math.floor(Math.random() * (15000 - 10000)) + 10000
+      );
+    },
 
-		onsiteBid: function(){
-			bidding.placeBid(bidRef.content.current.ask, "On Site",null,null);
-			bidding.updateProposal(null,null,null,null,'siteon');
-		},
+    clearInterest: function() {
+      bidding.clearInterested();
+    },
 
-		proposeMaxBid: function(){
-			bidding.updateProposal(bidRef.content.current.ask,"BC, CAN",77777,bidRef.content.group.lots[0].lot,'maxbid');
-		},
+    onsiteBid: function() {
+      bidding.placeBid(bidRef.content.current.ask, "On Site", null, "On Site");
+      bidding.updateProposal(null, null, null, null, "siteon");
+    },
 
-		proposeBid: function(){
-			bidding.updateProposal(bidRef.content.current.ask,"BC, CAN",77777,bidRef.content.group.lots[0].lot,'internetbid');
-		},
+    proposeMaxBid: function() {
+      bidding.updateProposal(
+        bidRef.content.current.ask,
+        "BC, CAN",
+        77777,
+        bidRef.content.group.lots[0].lot,
+        "maxbid"
+      );
+    },
 
-		acceptProposal: function(){
-			var bidType;
-			if(bidRef.content.proposal.type === "internetbid") bidType = 'interneton';
-			else bidType = 'maxon';
+    proposeBid: function() {
+      bidding.updateProposal(
+        bidRef.content.current.ask,
+        "BC, CAN",
+        77777,
+        bidRef.content.group.lots[0].lot,
+        "internetbid"
+      );
+    },
 
-			bidding.placeBid(bidRef.content.current.ask, bidRef.content.proposal.location, bidRef.content.proposal.lot, bidRef.content.proposal.bidder);
-			bidding.updateProposal(null,null,null,null,bidType);
-		},	
-		
-		seedData: function(){
-			$.ajax({
-				method: "GET",
-				url: "assets/js/lotdata.json",
-				dataType: "json", 
-				success: function(data){
-					dataRef.set(data);
-				},
-				error: function(jqXHR, textStatus){
-					console.log(jqXHR.responseText);
-					console.log("Request failed: " + textStatus);
-				}
-			});
-			
-		},
-	},
+    acceptProposal: function() {
+      var bidType;
+      if (bidRef.content.proposal.type === "internetbid")
+        bidType = "interneton";
+      else bidType = "maxon";
 
+      bidding.placeBid(
+        bidRef.content.current.ask,
+        bidRef.content.proposal.location,
+        bidRef.content.proposal.lot,
+        bidRef.content.proposal.bidder
+      );
+      bidding.updateProposal(null, null, null, null, bidType);
+    },
 
-}
+    seedData: function() {
+      $.ajax({
+        method: "GET",
+        url: "assets/js/lotdata.json",
+        dataType: "json",
+        success: function(data) {
+          dataRef.set(data);
+        },
+        error: function(jqXHR, textStatus) {
+          console.log(jqXHR.responseText);
+          console.log("Request failed: " + textStatus);
+        }
+      });
+    }
+  }
+};
 
 var bidRef = bidding.data;
 
-function bindData(){
-	rivets.bind($('.js--data-container'),{
-		bids: bidding.data,
-		controller: bidding.controller,
-	});
+function bindData() {
+  rivets.bind($(".js--data-container"), {
+    bids: bidding.data,
+    controller: bidding.controller
+  });
 }
-
 
 
