@@ -43,7 +43,6 @@ rivets.formatters.lengthToBool = function(value) {
 };
 
 rivets.formatters.invert = function(value) {
-  console.log(value);
   if (typeof value != "undefined") return false;
   return true;
 };
@@ -58,6 +57,8 @@ rivets.formatters.propertyList = function(obj) {
   })();
 };
 
-// rivets.formatters.isSold = function(status){
-// 	return
-// }
+rivets.formatters.internetOrOnsiteString = function(location) {
+  if (typeof location != "undefined" && location != "On Site")
+    return "Internet";
+  return "On Site";
+};

@@ -1,13 +1,17 @@
 .bidding-area {
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-
-  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 15% auto 10% 10%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .bidding-header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .current-prices {
@@ -41,14 +45,18 @@
 }
 
 .proposals-area {
-  flex: auto;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
   display: flex;
   flex-direction: column;
 }
 
 #proposal {
   flex: auto;
-  margin-bottom: 10px;
+  margin: 2vw;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -94,6 +102,7 @@
 
 .proposal--meta {
   margin-top: auto;
+  @include fontsize(600);
 }
 
 .proposals--max {
@@ -106,16 +115,33 @@
 }
 
 .current-high-bid {
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
   padding: 10px;
+  @include fontsize(400);
 }
 
-.bidding--footer {
-  margin-top: auto;
+.bidding--auctioneer {
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: center;
+  justify-self: center;
+  @include fontsize(400);
 }
 
-.footer--last-sold,
-.footer--clerk {
-  text-align: center;
-  border-top: 2px solid white;
-  padding: 10px;
+.bidding--clerk {
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  justify-self: center;
+  @include fontsize(400);
 }

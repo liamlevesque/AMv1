@@ -1,6 +1,6 @@
 @mixin fontsize($size) {
   @if $size == 1000 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   @if $size == 600 {

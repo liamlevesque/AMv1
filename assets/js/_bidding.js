@@ -189,6 +189,10 @@ var bidding = {
       bidding.updateProposal(null, null, null, null, bidType);
     },
 
+    rejectProposal: function() {
+      bidding.updateProposal(null, null, null, null, "waiting");
+    },
+
     seedData: function() {
       $.ajax({
         method: "GET",

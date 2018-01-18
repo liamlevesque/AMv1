@@ -37,7 +37,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -640,17 +642,17 @@ body {
     display: block; }
 
 .bidding-area {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px; }
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 15% auto 10% 10%;
+  grid-template-columns: 1fr 1fr; }
+
+.bidding-header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3; }
 
 .current-prices label {
   text-transform: uppercase;
@@ -674,9 +676,10 @@ body {
     content: ","; }
 
 .proposals-area {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,7 +692,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-  margin-bottom: 10px;
+  margin: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,10 +725,11 @@ body {
       -ms-flex: auto;
           flex: auto;
   position: relative;
-  font-size: 3rem; }
+  font-size: 5rem; }
 
 .proposal--meta {
-  margin-top: auto; }
+  margin-top: auto;
+  font-size: 2.4rem; }
 
 .proposals--max {
   padding: 10px;
@@ -736,16 +740,32 @@ body {
   margin-top: auto; }
 
 .current-high-bid {
-  padding: 10px; }
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 10px;
+  font-size: 1.75rem; }
 
-.bidding--footer {
-  margin-top: auto; }
+.bidding--auctioneer {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  font-size: 1.75rem; }
 
-.footer--last-sold,
-.footer--clerk {
-  text-align: center;
-  border-top: 2px solid white;
-  padding: 10px; }
+.bidding--clerk {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  font-size: 1.75rem; }
 
 .group-area {
   -webkit-box-flex: 1;
