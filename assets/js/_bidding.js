@@ -150,6 +150,16 @@ var bidding = {
       bidding.clearInterested();
     },
 
+    winnerMore: function() {
+      dataRef.child("/proposal/type").set("winnermore");
+      dataRef.child("/current/status").set("winnermore");
+    },
+
+    runnerUpMore: function() {
+      dataRef.child("/proposal/type").set("runnerupmore");
+      dataRef.child("/current/status").set("runnerupmore");
+    },
+
     onsiteBid: function() {
       bidding.placeBid(bidRef.content.current.ask, "On Site", null, "On Site");
       bidding.updateProposal(null, null, null, null, "siteon");
@@ -166,12 +176,18 @@ var bidding = {
     },
 
     proposeBid: function() {
+      let bidType = "internetbid";
+      if (bidding.data.content.current.status === "winnermore")
+        bidType = "internetbidwinner";
+      if (bidding.data.content.current.status === "runnerupmore")
+        bidType = "internetbidrunnerup";
+
       bidding.updateProposal(
         bidRef.content.current.ask,
         "BC, CAN",
         77777,
         bidRef.content.group.lots[0].lot,
-        "internetbid"
+        bidType
       );
     },
 

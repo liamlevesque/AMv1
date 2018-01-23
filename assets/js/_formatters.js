@@ -60,5 +60,5 @@ rivets.formatters.propertyList = function(obj) {
 rivets.formatters.internetOrOnsiteString = function(location) {
   if (typeof location != "undefined" && location != "On Site")
     return "Internet";
-  return "On Site";
+  return "Onsite";
 };

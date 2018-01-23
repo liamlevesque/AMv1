@@ -1,7 +1,15 @@
 html {
   font-family: "Trebuchet MS", Verdana, sans-serif;
-  font-size: 2vw;
+  font-size: 1.8vh;
+  font-weight: 700;
 }
+
+@media screen and (min-aspect-ratio: 4/3) {
+  html {
+    font-size: 1.5vw;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -15,30 +15,44 @@
 
 		<div class="bidding-header">
 			<div class="current-prices">
-				<div class="price ccy auction-ask">
+				<div class="price ccy auction-ask g-wrapper">
 					<label>Ask:</label>
-					<span class="dollars" rv-html="bids.content.current.ask | price"></span>
+					<span class="dollars g-cell h-ta-right" rv-html="bids.content.current.ask | price"></span>
 				</div>
-				<div class="price ccy auction-bid">
+				<div class="price ccy auction-bid g-wrapper">
 					<label>Bid:</label>
-					<span class="dollars" rv-html="bids.content.current.bid | price"></span>
+					<span class="dollars g-cell h-ta-right" rv-html="bids.content.current.bid | price"></span>
 				</div>
 			</div>
 		</div>
 
 		<div class="proposals-area">
 			<div id="proposal" rv-addtextclass="bids.content.proposal.type" rv-class-s-interest="bids.content.interested | lengthToBool">
+
 				<div class="proposal--bid" rv-if="bids.content.current.status | compare 'sold'">
 					<div class="h-va-center">
 						Sold { bids.content.current.location | internetOrOnsiteString }
 					</div>
 				</div>
-				<div class="proposal--bid" rv-show="bids.content.proposal.type | compare 'internetbid,maxbid,openingoffer'">
-					<div class="h-va-center">
+
+				<div class="proposal--bid" rv-if="bids.content.proposal.type | compare 'winnermore,runnerupmore'">
+					<div class="h-va-center" rv-if="bids.content.proposal.type | compare 'winnermore'">
+						Winner Wants More
+					</div>
+
+					<div class="h-va-center" rv-if="bids.content.proposal.type | compare 'runnerupmore'">
+						Runner Up Wants More
+					</div>
+				</div>
+
+				<div class="proposal--bid" rv-if="bids.content.proposal.type | compare 'internetbid,internetbidwinner,internetbidrunnerup'">
+					<div class="h-va-center" rv-if="bids.content.proposal.type | compare 'internetbid,internetbidwinner,internetbidrunnerup'">
+						<span rv-if="bids.content.proposal.type | compare 'internetbidwinner,internetbidrunnerup'">Buy </span>
 						<span class="dollars" rv-html="bids.content.proposal.bid | price"></span>
 					</div>
 				</div>
-				<div class="proposal--meta g-wrapper" rv-show="bids.content.proposal.type | compare 'internetbid,maxbid,openingoffer'">
+
+				<div class="proposal--meta g-wrapper" rv-show="bids.content.proposal.type | compare 'internetbid,internetbidwinner,internetbidrunnerup'">
 					<div class="g-cell h-ta-left">
 						{ bids.content.current.location | internetOrOnsiteString }
 					</div>
@@ -53,14 +67,12 @@
 			<span rv-if="bids.content.current.status | compare 'waiting'">Waiting for a bid</span>
 			<div rv-unless="bids.content.current.status | compare 'waiting'">
 				<div rv-if="bids.content.current.location | compare 'On Site'">
-					On Site
+					ONSITE
 				</div>
 				<div class="g-wrapper" rv-unless="bids.content.current.location | compare 'On Site'" class="h-ta-center">
-					<div class="g-cell">
-						<span rv-if="bids.content.current.status | compare 'sold'">{bids.content.current.bidder}</span>
-						<span rv-unless="bids.content.current.status | compare 'sold'">Internet</span>
-					</div>
-					<div class="g-cell h-ta-right">{ bids.content.current.location }</div>
+					<span rv-if="bids.content.current.status | compare 'sold'">{bids.content.current.bidder}</span>
+					<span rv-unless="bids.content.current.status | compare 'sold'">Internet</span>
+					&nbsp; { bids.content.current.location }
 				</div>
 			</div>
 		</div>
@@ -68,10 +80,12 @@
 
 
 		<div class="bidding--auctioneer">
-			<span>Auctioneer: </span>{ bids.content.auctioneer }
+			<h3>Auctioneer</h3>
+			{ bids.content.auctioneer }
 		</div>
 		<div class="bidding--clerk">
-			<span>eClerk: </span>{ bids.content.clerk }
+			<h3>eClerk</h3>
+			{ bids.content.clerk }
 		</div>
 	</div>
 
@@ -89,9 +103,9 @@
 		<div>
 			<label>Selling</label>
 			<button rv-on-click="controller.sellLot">Sell Lot</button>
-			<!-- <br/>
+			<br/>
 			<button rv-on-click="controller.winnerMore">Winner Wants More</button>
-			<button rv-on-click="controller.runnerUpMore">Runner Up Wants More</button> -->
+			<button rv-on-click="controller.runnerUpMore">Runner Up Wants More</button>
 		</div>
 		<div>
 			<label>Interested Bidders</label>

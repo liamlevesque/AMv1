@@ -2,8 +2,9 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 15% auto 10% 10%;
+  grid-template-rows: 9rem auto 6rem 6rem;
   grid-template-columns: 1fr 1fr;
+  padding: 0.8rem;
 }
 
 .bidding-header {
@@ -24,12 +25,12 @@
 }
 
 .auction-ask {
-  @include fontsize(600);
+  @include fontsize(800);
   margin-bottom: 10px;
 }
 
 .auction-bid {
-  @include fontsize(400);
+  @include fontsize(600);
 }
 
 .interested {
@@ -56,11 +57,12 @@
 
 #proposal {
   flex: auto;
-  margin: 2vw;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
+  padding: 0.8rem;
+
+  margin: 0 -0.8rem;
 
   &.s-interest {
     background-color: palette(yellow);
@@ -75,8 +77,17 @@
     background-color: palette(blue);
   }
 
-  &.s-internetbid {
+  &.s-internetbid,
+  &.s-internetbidwinner,
+  &.s-internetbidrunnerup {
     background-color: palette(red);
+
+    .proposal--bid {
+      animation-name: fadeinout;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+    }
   }
 
   &.s-interneton {
@@ -85,6 +96,24 @@
 
   &.s-maxon {
     background-color: palette(orange);
+  }
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -120,7 +149,7 @@
 
   grid-column-start: 1;
   grid-column-end: 3;
-  padding: 10px;
+  padding-top: 0.8rem;
   @include fontsize(400);
 }
 
@@ -131,8 +160,7 @@
   grid-column-start: 1;
   grid-column-end: 2;
   align-self: center;
-  justify-self: center;
-  @include fontsize(400);
+  @include fontsize(300);
 }
 
 .bidding--clerk {
@@ -142,6 +170,5 @@
   grid-column-start: 2;
   grid-column-end: 3;
   align-self: center;
-  justify-self: center;
-  @include fontsize(400);
+  @include fontsize(300);
 }
